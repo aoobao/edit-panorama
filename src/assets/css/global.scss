@@ -1,0 +1,75 @@
+@font-face {
+  font-family: fx-led;
+  src: url("../font/FX-LED.TTF");
+}
+
+.led {
+  font-family: fx-led;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.point-none {
+  pointer-events: none;
+}
+
+.point-show {
+  pointer-events: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body {
+  font-size: 12px;
+  // font-weight: bold !important;
+}
+
+.amap-copyright,
+.amap-logo {
+  display: none !important;
+}
+
+/***
+ *      ______                                 __  __          __                           
+ *     /      \                               |  \|  \        |  \                          
+ *    |  $$$$$$\  _______   ______    ______  | $$| $$        | $$____    ______    ______  
+ *    | $$___\$$ /       \ /      \  /      \ | $$| $$ ______ | $$    \  |      \  /      \ 
+ *     \$$    \ |  $$$$$$$|  $$$$$$\|  $$$$$$\| $$| $$|      \| $$$$$$$\  \$$$$$$\|  $$$$$$\
+ *     _\$$$$$$\| $$      | $$   \$$| $$  | $$| $$| $$ \$$$$$$| $$  | $$ /      $$| $$   \$$
+ *    |  \__| $$| $$_____ | $$      | $$__/ $$| $$| $$        | $$__/ $$|  $$$$$$$| $$      
+ *     \$$    $$ \$$     \| $$       \$$    $$| $$| $$        | $$    $$ \$$    $$| $$      
+ *      \$$$$$$   \$$$$$$$ \$$        \$$$$$$  \$$ \$$         \$$$$$$$   \$$$$$$$ \$$      
+ *                                                                                          
+ *                                                                                          
+ *                                                                                          
+ */
+/*控制整个滚动条*/
+::-webkit-scrollbar {
+  background-color: #004b61;
+  width: 6px;
+  height: 6px;
+  background-clip: padding-box;
+}
+
+/*滚动条两端方向按钮*/
+// ::-webkit-scrollbar-button {
+//   background-color: pink;
+// }
+
+/*滚动条中间滑动部分*/
+::-webkit-scrollbar-thumb {
+  // background-color: rgba($color: #3facff, $alpha: 0.5);
+  background-color: #0de3fa;
+  border-radius: 5px;
+}
+
+/*滚动条右下角区域*/
+// ::-webkit-scrollbar-corner {
+//   background-color: red;
+// }
